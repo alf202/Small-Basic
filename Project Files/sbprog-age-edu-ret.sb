@@ -1,0 +1,29 @@
+'A program to determine how old you are and to determine your education status
+'###############S TART PROGRAM###########################
+  'Changing the Graphical User Interface
+  TextWindow.ForegroundColor = "blue"
+  TextWindow.BackgroundColor = "red"
+  
+  'Asking how old you are and saving the data to the variable 'age'
+  TextWindow.WriteLine("How old are you?")
+  age = TextWindow.Read()
+ 
+ 'If the age is <18, ask for what there current educational status is
+ If age <18 Then
+   TextWindow.WriteLine("Where do you recieve education?")
+  edustat = TextWindow.Read()
+Else
+  TextWindow.WriteLine("You must be at work then")
+EndIf
+
+'If the age is >65, ask if you are retired
+If age >65 Then
+  TextWindow.WriteLine("Are you retired?")
+  retstat = TextWindow.Read()
+else
+  TextWindow.WriteLine("You must still be at work then")
+EndIf
+
+'##############END PROGRAM#############################
+    
+ 

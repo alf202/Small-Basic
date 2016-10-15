@@ -1,0 +1,6 @@
+TextWindow.WriteLine("What is the number you wish to multiply?")
+userInput = TextWindow.ReadNumber()
+l = TextWindow.ReadNumber()
+answer= userInput * l 
+TextWindow.WriteLine("The Answer is " + answer)
+

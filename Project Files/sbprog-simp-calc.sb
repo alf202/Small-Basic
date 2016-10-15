@@ -1,0 +1,17 @@
+'A program to complete simple calcuations
+
+  'Defining the numbers the calculations should be completed using
+  num1 = 20
+  num2 = 10
+  
+  'Completing the calculations
+  num3 = num1 + num2
+  num4 = num1 - num2
+  num5 = num1 * num2
+  num6 = num1 / num2
+  
+  'Outputing the results
+TextWindow.WriteLine(num3)
+TextWindow.WriteLine(num4)
+TextWindow.WriteLine(num5)
+TextWindow.WriteLine(num6)

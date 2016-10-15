@@ -1,0 +1,6 @@
+TextWindow.WriteLine("Press type roll to roll the dice")
+roll = TextWindow.Read()
+If roll = "roll" Or "Roll" then
+  number = Math.GetRandomNumber(6)
+  EndIf
+  TextWindow.WriteLine("You rolled " +number)

@@ -1,0 +1,28 @@
+GraphicsWindow.FontSize = 26
+
+GraphicsWindow.BrushColor = "Red"
+GraphicsWindow.Title = "Clock"
+
+
+up:
+
+If Clock.Hour >= 12 Then
+
+  status = "PM" 
+
+Else
+
+  status = "AM"
+
+EndIf
+
+CurrentTime = Clock.Hour + " : " + Clock.Minute + " : " + Clock.Second + " " + status
+
+GraphicsWindow.DrawBoundText(100, 100, 400, "Time: " + CurrentTime)
+
+Program.Delay(1000)
+
+GraphicsWindow.Clear()
+
+Goto up
+ 

@@ -1,0 +1,63 @@
+'A simple quiz with sound
+score=0
+
+'Question 1 
+  TextWindow.WriteLine("How many sides are on a 20p coin?") 'Q1
+  sides=Textwindow.Read()
+  If sides="7" Or "seven" Then
+      score = score+1
+      TextWindow.WriteLine("correct! Your Score is "+score) 
+  Else
+    TextWindow.WriteLine("Wrong! The answer was 7")
+  EndIf
+  
+  'Question 2
+  TextWindow.WriteLine("Does England have a king or a queen?") 'Q2
+  monarch= TextWindow.Read()
+  If monarch="queen" Or "a" Then
+    score=score+1
+    TextWindow.WriteLine("Correct! Your Score is "+score)  
+  Else
+    TextWindow.WriteLine("Wrong the answer was queen") 
+  EndIf
+  
+  'Question 3
+  TextWindow.WriteLine("What is the capital Angola?")  
+  capital = TextWindow.Read()
+  If capital="luanda" Then
+    score=score+1
+    TextWindow.WriteLine("Correct! Your score is "+score)
+  Else
+    TextWindow.WriteLine(" Wrong the answer was Luanda")
+  EndIf
+  
+  'Question 4
+  TextWindow.WriteLine("What is half of 99?") 'Q4
+  maths = TextWindow.Read()
+    If maths="49 and a half" Or ("49.5") Then
+      maths= TextWindow.Read()
+      score=score+1
+      TextWindow.WriteLine("Correct! Your score is "+score)
+    Else
+      TextWindow.WriteLine("Wrong the answer was 49.5")'Q5
+    EndIf
+    
+    'Question 5
+    TextWindow.WriteLine("Is accommodate spelt correctly?")
+    spelling= TextWindow.Read()
+    If spelling="yes" Then
+     score=score+1
+    TextWindow.WriteLine("Correct! Your score is "+score)
+  Else
+    TextWindow.WriteLine("The correct spelling was accommodate")
+  EndIf
+  
+  'Question 6
+  TextWindow.WriteLine("Who painted the Mona Lisa?")
+  art=TextWindow.Read()
+  If art="Leonardo da Vinci" Then
+    score=score+1
+    TextWindow.WriteLine("Correct! Your score is "+score)
+  Else
+    TextWindow.WriteLine("Wrong the answer Leonardo da Vinci")
+   EndIf

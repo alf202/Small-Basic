@@ -1,0 +1,9 @@
+'A program seeing what the time is then giving a message dependent on the time 
+'Comparitive variable in use.
+'#################START PROGRAM#########################
+If(Clock.Hour < 12) Then
+  TextWindow.WriteLine("Good morning!")
+Else
+  TextWindow.Write("Good Afternoon!")
+EndIf
+'##################END PROGRAM#########################
