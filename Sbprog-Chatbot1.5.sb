@@ -1,0 +1,38 @@
+'################################################################
+'#																#
+'#	This is a program which is designed to emulate a basic		#
+'#	Form of AI, by asking questions and then responding			#
+'#	with predefined responses giving an overview at the end.	#
+'#			Created By Alfie Payne 9Y							#
+'#																#
+'################################################################
+
+
+'Configuring The Terminal UI 
+	TextWindow.BackgroundColor="blue"
+	TextWindow.ForegroundColor="red"
+	TextWindow.Title="Chatbot V1.0"
+
+'Program begins
+	'Name
+		TextWindow.WriteLine("Hello") 
+		TextWindow.WriteLine("What is your name?")
+			name = TextWindow.Read() 
+		TextWindow.WriteLine("Nice to meet you "+name)
+		
+	'Mood
+		TextWindow.WriteLine("How are you feeling?")
+			feeling = TextWindow.Read()
+		TextWindow.WriteLine("I am also feeling "+feeling)
+
+	'Day
+		TextWindow.WriteLine("What did you do at school today?")
+			school = TextWindow.Read()
+		TextWindow.WriteLine("I also did "+school)
+
+	'Overview of information collected
+		TextWindow.WriteLine("So we have just established that your name is "+name)
+		TextWindow.WriteLine("You are feeling "+feeling)
+		TextWindow.WriteLine("And that both our lessons were "+school)
+
+'########## END OF PROGRAM ##########
