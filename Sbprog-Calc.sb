@@ -1,0 +1,55 @@
+'A simple Small Basic Calculator
+begin:
+     'Setting it up
+    TextWindow.WriteLine("Welcome to the Small Basic Calculator!")
+    TextWindow.Clear()
+   
+    'Defining the first number
+    TextWindow.WriteLine("Please enter your first number here:")
+    TextWindow.Write("")
+    num1 = TextWindow.ReadNumber()
+  
+    'Clearning
+    TextWindow.Pause()
+    TextWindow.Clear()
+    
+    'The second number
+    TextWindow.WriteLine("Please enter your second number :")
+    TextWindow.Write("")
+    
+    num2 = TextWindow.Read()
+    
+    'The operation
+    TextWindow.WriteLine("Please enter the operation you wish to perform (+,-,*,/)")
+    TextWindow.Write("")
+    
+    'Storing the operation in a variable
+    o = TextWindow.Read()
+    
+    'Performing the operations
+    If(o ="+") Then
+      num3 = num1 + num2
+      TextWindow.WriteLine(num3)
+    ElseIf(o ="-") Then
+      num3 = num1 - num3
+      TextWindow.WriteLine(num3)
+    ElseIf(o = "*") Then
+      num3 = num1 * num2
+      TextWindow.WriteLine(num3)
+    ElseIf(o = "/") Then
+      num3 = num1 / num2
+      TextWindow.WriteLine(num3)
+    EndIf
+    
+    TextWindow.Pause()
+    TextWindow.Clear()
+    
+    TextWindow.WriteLine("Would you like to perform another operation? (Y or N)")
+    TextWindow.Write("")
+    
+    doagain = TextWindow.Read()
+    
+    If(doagain = "Y" Or doagain = "y") Then
+      Goto begin
+      EndIf
+      
