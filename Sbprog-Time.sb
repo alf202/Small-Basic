@@ -1,0 +1,9 @@
+'A program to find the end users name, and to say whether it is afternoon or morning
+TextWindow.WriteLine("Hi, what's your name?")
+name = TextWindow.Read()
+If Clock.Hour > 12 Then
+  TextWindow.WriteLine("Good Afternoon "+name)
+Else
+  TextWindow.WriteLine("Good Morning "+name)
+EndIf
+  
