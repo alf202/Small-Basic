@@ -1,0 +1,30 @@
+TextWindow.BackgroundColor="blue"
+' The above line of code changes the background colour of the text
+TextWindow.ForegroundColor="red"
+' The above line of code changes the colour of the text
+TextWindow.Title="Chatbot V1.0"
+'The above line of code changes the title of the window
+
+
+TextWindow.WriteLine("Hello") 
+'The above line of code displays text
+TextWindow.WriteLine("What is your name?")
+'The above line of code asks For user input
+name = TextWindow.Read() 
+' The above line of code stores the user input into the variable name
+TextWindow.WriteLine("Nice to meet you "+name)
+' The above line of code displays text plus the variable name
+' The below is the same principle of above
+
+TextWindow.WriteLine("How are you feeling?")
+feeling = TextWindow.Read()
+TextWindow.WriteLine("I am also feeling "+feeling)
+
+TextWindow.WriteLine("What did you do at school today?")
+school = TextWindow.Read()
+TextWindow.WriteLine("I also did "+school)
+
+TextWindow.WriteLine("So we have just established that your name is "+name)
+TextWindow.WriteLine("You are feeling "+feeling)
+TextWindow.WriteLine("And that both our lessons were "+school)
+' The above three lines of code displays all of the information gathered
